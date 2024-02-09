@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #F8CECC;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#blessings {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
