@@ -20,6 +20,7 @@ function test(){
         
         console.log("click")
     }
+//kjsk
     function json(){
         var param = '{"eventName" : "fistCharge , "amount" : "200"}'
         try{
