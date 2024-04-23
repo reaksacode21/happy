@@ -14,6 +14,7 @@
         <h1>🧧 Happy China New Year! 🎉</h1>
         <button id="showBlessings">សូមទទួលពាក្យជូនពរពីReaksa</button>
         <div id="blessings"></div>
+         <button onclick="test1()">Test1</button>
     </div>
     <script>
         function test(){
@@ -22,7 +23,9 @@
         }catch{
 
         }
-        
+        function test1(){
+            window.webkit.messageHandlers.test.postMessage("Hello, world!");
+        }
         console.log("click")
     }
     function json(){
