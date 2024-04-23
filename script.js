@@ -11,7 +11,25 @@ const blessings = [
     'មានសង្សារនៅ!',
     'សុំTelegram:you can contact me:097 6765 427 មិនឆាតមកប្រយត្ន័គ្មានអ្នកស្រលាញ់'
 ];
+function test(){
+        try{
+            window.webkit.messageHandlers.test.postMessage("Hello, world!");
+        }catch{
 
+        }
+        
+        console.log("click")
+    }
+    function json(){
+        var param = '{"eventName" : "fistCharge , "amount" : "200"}'
+        try{
+            window.webkit.messageHandlers.test.postMessage(param);
+        }catch{
+
+        }
+         
+        console.log(param)
+    }
 showBlessingsBtn.addEventListener('click', () => {
     const randomIndex = Math.floor(Math.random() * blessings.length);
     blessingsDiv.innerHTML = `<p>${blessings[randomIndex]}</p>`;
