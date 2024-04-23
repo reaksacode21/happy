@@ -15,6 +15,26 @@
         <button id="showBlessings">សូមទទួលពាក្យជូនពរពីReaksa</button>
         <div id="blessings"></div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function test(){
+        try{
+            window.webkit.messageHandlers.test.postMessage("Hello, world!");
+        }catch{
+
+        }
+        
+        console.log("click")
+    }
+    function json(){
+        var param = '{"eventName" : "fistCharge , "amount" : "200"}'
+        try{
+            window.webkit.messageHandlers.test.postMessage(param);
+        }catch{
+
+        }
+         
+        console.log(param)
+    }
+    </script>
 </body>
 </html>
