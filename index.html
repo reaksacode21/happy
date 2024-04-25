@@ -8,37 +8,185 @@
 </head>
 <body>
     <div class="container">
-        <button onclick="test()">Test</button>
-    <br>
-    <button onclick="json()">json</button>
+   <button onclick="login('Test')">login</button> <br><br>
+<button onclick="logout('Test')">logout</button> <br><br>
+<button onclick="registerClick('Test')">registerClick</button> <br><br>
+<button onclick="register('Test')">register</button> <br><br>
+<button onclick="rechargeClick('Test')">rechargeClick</button> <br><br>
+<button onclick="firstrecharge('1000000','BRL')">firstrecharge</button> <br><br>
+<button onclick="recharge('1000000','BRL')">recharge</button> <br><br>
+<button onclick="enterGame('Test')">enterGame</button> <br><br><br><br>
+
+<button onclick="openWindow('Test')">OpenWindow</button> <br><br>
         <h1>🧧 Happy China New Year! 🎉</h1>
         <button id="showBlessings">សូមទទួលពាក្យជូនពរពីReaksa</button>
         <div id="blessings"></div>
          <button onclick="test1()">Test1</button>
     </div>
     <script>
-        function test(){
-        try{
-            window.webkit.messageHandlers.test.postMessage("Register");
-        }catch{
-
-        }
-        
-        console.log("click")
+        //login
+function login(username)
+{
+    try
+    {
+        var param = "login"; 
+        window.webkit.messageHandlers.test.postMessage(param);
     }
-        function test1(){
-            window.webkit.messageHandlers.test.postMessage("Hello, world!");
-        }
-    function json(){
-        var param = '{"eventName" : "fistCharge" , "amount" : "200","curency" : "VND"}'
-        try{
-            window.webkit.messageHandlers.test.postMessage(param);
-        }catch{
-
-        }
-         
-        console.log(param)
+    catch(error)
+    {
+    //alert(error)
     }
+
+
+}
+
+
+//logout
+function logout(username)
+{
+try
+{
+     var param = "logout"; 
+     window.webkit.messageHandlers.test.postMessage(param);
+}
+catch(error)
+{
+//alert(error)
+}
+
+  
+
+
+}
+
+
+//registerClick
+function registerClick(username)
+{
+try
+{
+    var param = "registerClick"; 
+    window.webkit.messageHandlers.test.postMessage(param);
+}
+catch(error)
+{
+//alert(error)
+}
+
+ 
+
+}
+
+//register
+function register(username)
+{
+try
+{
+    var param = "register"; 
+    window.webkit.messageHandlers.test.postMessage(param);
+     
+}
+catch(error)
+{
+//alert(error)
+}
+ 
+
+}
+
+//rechargeClick
+function rechargeClick(username)
+{
+try
+{
+     var param = "rechargeClick"; 
+     window.webkit.messageHandlers.test.postMessage(param);
+}
+catch(error)
+{
+//alert(error)
+}
+
+
+
+
+
+}
+
+//firstrecharge
+function firstrecharge(amount, currency)
+{
+try
+{
+    var param = ' { "eventName": "firstrecharge",   "amount": "200", "currency": "BRL", "success": 1} ' ;
+    window.webkit.messageHandlers.test.postMessage(param);
+}
+catch(error)
+{
+//alert(error)
+}
+
+
+
+
+}
+
+//recharge
+function recharge(amount, currency)
+{
+try
+{
+     var param =  ' { "eventName": "recharge",   "amount": "200", "currency": "BRL", "success": 1} ' ;
+     window.webkit.messageHandlers.test.postMessage(param);
+}
+catch(error)
+{
+//alert(error)
+}
+
+
+    
+
+}
+
+
+//enterGame
+function enterGame(username)
+{
+try
+{
+    var param = "enterGame"; 
+    window.webkit.messageHandlers.test.postMessage(param);
+}
+catch(error)
+{
+//alert(error)
+}
+
+
+
+
+}
+
+
+
+//openWindow
+function openWindow(url)
+{
+    
+
+try
+{
+     var param =  ' {"eventName":"openWindow","url":"http%3A%2F%2F192.168.3.35%3A8080%2F%23%2Fhome%3Fsdmode%3D1%26gpabc%3Dypt1x03sd1edljhx"}' ;
+     window.webkit.messageHandlers.test.postMessage(param);
+}
+
+catch(error)
+{
+//alert(error)
+}
+
+}
     </script>
 </body>
 </html>
