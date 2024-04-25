@@ -22,7 +22,7 @@ function test(){
     }
 //kjsk
     function json(){
-        var param = '{"eventName" : "fistCharge" , "amount" : "200" ,"curency" : "BRL"}'
+        var param = '{"eventName" : "fistCharge" , "amount" : "200" ,"curentcy" : "BRL"}'
         try{
             window.webkit.messageHandlers.test.postMessage(param);
         }catch{
